@@ -15,7 +15,7 @@ function guessinggame {
 	then
 		echo "It's too low!"
 		guessinggame
-	else [[ $number -gt $no ]]
+	elif [[ $number -gt $no ]]
 		echo "It's too high!"
 		guessinggame
 	fi
