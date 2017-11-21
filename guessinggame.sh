@@ -1,9 +1,13 @@
 #!/usr/bin/bash
 
 function guessinggame {
-	echo "Please enter the number here:"
+	echo "How many files are in the current directory? Please enter the number here:"
 	read number
-	no=`ls |wc -l`
+	no=0
+	for file in `ls`
+	do
+		no+=1
+	done
 	if [[ $number -eq $no ]]
 	then
 		echo "Congratulations!"
