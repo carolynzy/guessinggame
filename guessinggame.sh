@@ -6,7 +6,11 @@ function guessinggame {
 	no=0
 	for file in `ls`
 	do
+<<<<<<< HEAD
 		no=`expr $no + 1`
+=======
+		no+=1
+>>>>>>> ec38af9955191727e4dec8bf70d156ffe53612d8
 	done
 	if [[ $number -eq $no ]]
 	then
